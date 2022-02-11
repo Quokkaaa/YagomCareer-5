@@ -96,7 +96,24 @@ func playGame() {
 }
 ```
 [리펙토링 후]
-
+```Swift
+func playGame() {
+    let onePoint = 1
+    
+    while remainingChangeCount > .zero {
+        if isHaveVerifiedNumbers(receiveUserInputNumbers()) {
+            calculateStrikeBallWith(userInputNumbers, and: computerNumbers)
+            remainingChangeCount -= onePoint
+            printPlayingGameMessage(userNumbers: userInputNumbers, ballCount: strikeCount, strikeCount: ballCount)
+            resetStrikeBallCount()
+            if strikeCounting == endGameCount { break }
+        } else {
+            receiveUserInputNumbers()
+        }
+    }
+    judgeGameResult()
+}
+```
 
 
 ## 문제해결

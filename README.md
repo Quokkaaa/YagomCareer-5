@@ -5,7 +5,7 @@
 # 숫자야구게임 (Number Base ball)
 
 #순서도
-
+![step1 flowchart](https://user-images.githubusercontent.com/91132536/153589927-1193aa32-3992-46db-be82-9bafa989d24a.png)
 
 ## 프로젝트 기간 ( 2022.02.08 ~ 2022.02.11 )
 

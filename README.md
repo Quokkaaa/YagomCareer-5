@@ -77,44 +77,6 @@ func calculateStrikeBallWith(_ userNumbers: Array<Int>, and computerNumbers: Arr
 }
 ```
 
-[리펙토링 전]
-```Swift
-func playGame() {
-    let onePoint = 1
-    
-    while remainingChangeCount > .zero {
-        if isHaveVerifiedNumbers(receiveUserInputNumbers()) {
-            let (strikeResult, ballResult) = calculateStrikeBallWith(userInputNumbers, and: computerNumbers)
-            remainingChangeCount -= onePoint
-            printPlayingGameMessage(userNumbers: userInputNumbers, ballCount: ballResult, strikeCount: strikeResult)
-            if strikeCounting == endGameCount { break }
-        } else {
-            receiveUserInputNumbers()
-        }
-    }
-    judgeGameResult()
-}
-```
-[리펙토링 후]
-```Swift
-func playGame() {
-    let onePoint = 1
-    
-    while remainingChangeCount > .zero {
-        if isHaveVerifiedNumbers(receiveUserInputNumbers()) {
-            calculateStrikeBallWith(userInputNumbers, and: computerNumbers)
-            remainingChangeCount -= onePoint
-            printPlayingGameMessage(userNumbers: userInputNumbers, ballCount: strikeCount, strikeCount: ballCount)
-            resetStrikeBallCount()
-            if strikeCounting == endGameCount { break }
-        } else {
-            receiveUserInputNumbers()
-        }
-    }
-    judgeGameResult()
-}
-```
-
 
 ## 문제해결
 - 함수의 기능을 분리하지 않으니 가독성이 해치는걸 몸소 느꼈다. 왜냐하먄 실행도중 예상치 못한 출력메세지가 나왔는데 확인하고 에러를 찾는게 스스로 안될 정도로 복잡했떤 코드였다. 이럴때 로직을 더 월활하게 기능분리를 했으면 분명히 로직을 찾는데는 수월했을 것이다. 전역변수로 검증된 숫자를 append 메서드를 사용하여 저장하는 방식을 택했는데 1회 경기 이후 2회때부터 계속 에러가 나기시작했다. 이유는 값 초기화를 잘못했기때문이었따.

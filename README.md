@@ -4,10 +4,10 @@
 
 # 숫자야구게임 (Number Base ball)
 
-#순서도
-![step1 flowchart](https://user-images.githubusercontent.com/91132536/153589927-1193aa32-3992-46db-be82-9bafa989d24a.png)
-
 ## 프로젝트 기간 ( 2022.02.08 ~ 2022.02.11 )
+
+##  순서도
+![step1 flowchart](https://user-images.githubusercontent.com/91132536/153589927-1193aa32-3992-46db-be82-9bafa989d24a.png)
 
 ## 요구사항
 - 컴퓨터는 중복되지 않은 임의의 수 3개를 생성한다.

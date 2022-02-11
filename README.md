@@ -22,8 +22,11 @@
 - `selectMenu()` : 메뉴 출력하는 함수
 - `receiveUserInputNumbers()` : 사용자 숫자 입력받는 함수
 - `generateRandomNumbers()` : 범위와 수를 지정하여 랜덤 숫자를 생성하는 함수
+- `calculateStrikeCount()` : 스트라이크를 계산하는 함수
+- `calculateBallCount()` : 볼을 계산하는 함수
 - `calculateStrikeBallWith()` : 스트라이크와 볼을 계산하는 함수
 - `saveConvertedNumbers()` : 사용자 입력 숫자를 저장하는 함수
+- `resetStrikeBallCount()` : 스트라이크와 볼 수를 초기
 - `isNumber()` : 숫자인지 검증하는 함수
 - `isHaveInRange()` : 범위안에 있는 숫자인지 검증하는 함수
 - `isHaveDuplicationNumbers()` : 중복된 숫자가 없는지 검증하는 함수

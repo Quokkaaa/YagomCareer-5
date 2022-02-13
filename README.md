@@ -73,6 +73,7 @@ func calculateStrikeBallWith(_ userNumbers: Array<Int>, and computerNumbers: Arr
 
 ## 문제해결
 - 코드를 정상적으로 구현하고 실행을 하는데 이상하게 3 스트라이크 이상을 실현했는데도 게임이 종료가 되지않았다. 될때가 있고 안될때가 있엇는데 그 이유를 lldb를 통해서 발견해볼 수 있었다. 보통 스트라이크가 나오면 `strikeCountResult` 전역변수에 스트라이크 값이 저장이된다. 1이나오면 1, 2가나오면 2, 비교하는 수가 최대 3개이기때문에 스트라이크가 가장 많이 될 확률은 3 스트라이크이다. 그런데 2스트라이크가 누적이된 상태에서 다음 게임을 진행하는데 여기서 2스트라이크가 나오면? 총 누적은 4스트라이크가 된다. 그런데 아래와 같은 `strikeCountResult == endGameCount` 에 조건식으로 기입을 하면 3을 건너 뛰기때문에 게임이 종료가 되지않았던 것이다. 그래서 3이상으로 해주는 것이 로직 구현상 정확하다고 볼 수 있다.
+
 [리펙토링 전]
 ```swift
         if strikeCountResult == endGameCount { break }

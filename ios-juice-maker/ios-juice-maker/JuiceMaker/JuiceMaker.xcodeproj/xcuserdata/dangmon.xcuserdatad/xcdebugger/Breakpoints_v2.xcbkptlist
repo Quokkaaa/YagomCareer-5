@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "96E52A62-6A54-4523-961B-2C5AE05500D4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B64C2629-77A9-4002-86FC-FA0EB23CA05A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Model/FruitStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "changeFruitQuantity(by:count:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "193B5236-4CF6-4E05-850D-B417361BF17A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Model/FruitStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "changeFruitQuantity(by:count:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A9E5635-687A-4272-A210-8197954946BC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/EditFruitStockView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03C75B5E-2E16-458C-BC8B-7E7E6D9CD08F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/EditFruitStockView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D485781-943D-429A-A3B9-F8063AA3BA20"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/JuiceStoreView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D60D26D-938C-49E6-9CA9-3BBF59B21599"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/JuiceStoreView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05AAF337-DF39-49A9-8F12-A2C5551345CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/JuiceStoreView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6DB813E-A322-48E5-B1E6-B72BA8C23399"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/JuiceStoreView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69B12519-4BBF-43B9-A5DF-7B77F86A589F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/JuiceStoreView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "JuiceStoreViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "69B12519-4BBF-43B9-A5DF-7B77F86A589F - 881f4ae87b135ded"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.strawberryStockLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "69B12519-4BBF-43B9-A5DF-7B77F86A589F - 28b3063cd37df9f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.strawberryStockLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "69B12519-4BBF-43B9-A5DF-7B77F86A589F - 407fa18200d1f66e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.strawberryStockLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "69B12519-4BBF-43B9-A5DF-7B77F86A589F - 524d5defb8dc1db6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.strawberryStockLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "69B12519-4BBF-43B9-A5DF-7B77F86A589F - 2e4b1351764dd09d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; JuiceMaker.JuiceStoreViewController"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "69B12519-4BBF-43B9-A5DF-7B77F86A589F - 3dcbac928e4bfa59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;JuiceMaker.JuiceStoreViewController&gt;"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE5635D9-76E9-458D-9D43-B9CD3BAB4D0C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/JuiceStoreView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "JuiceStoreViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EE5635D9-76E9-458D-9D43-B9CD3BAB4D0C - f4f0cedb460867a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.juiceMaker.getter : JuiceMaker.JuiceMaker"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "EE5635D9-76E9-458D-9D43-B9CD3BAB4D0C - 2e4b1351764dd0df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; JuiceMaker.JuiceStoreViewController"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "EE5635D9-76E9-458D-9D43-B9CD3BAB4D0C - 3dcbac928e4bfa1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JuiceMaker.JuiceStoreViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;JuiceMaker.JuiceStoreViewController&gt;"
+                  moduleName = "JuiceMaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dangmon/Documents/Yagom-CareerCamp-5/ios-juice-maker/ios-juice-maker/JuiceMaker/JuiceMaker/Controller/JuiceStoreView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECF0A432-47C7-4AEF-88C1-01BE52876C20"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuiceMaker/Controller/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

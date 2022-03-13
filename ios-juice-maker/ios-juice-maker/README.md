@@ -313,22 +313,6 @@ extension UIViewController {
     }
 ```
 
-# 학습키워드
-- Classes And Struture
-- Initialization, Deinit
-- Type Casting
-- Erro Handling
-- Properties
-- Method
-- Access Control
-- Nested Types
-- Model-View-Controller
-- Key-value observing
-- NSObject
-- Alert
-- self
-- forEach
-
 # [STEP1] 
 # 고민되었던점
 - class와 struct 사용에대해 고민했습니다.
@@ -369,4 +353,19 @@ subtractFruitQuantity메서드 내 self.fruitStore.changeFruitQuantity코드가 
     }
 ```
 
+# 학습키워드
+- Classes And Struture
+- Initialization, Deinit
+- Type Casting
+- Erro Handling
+- Properties
+- Method
+- Access Control
+- Nested Types
+- Model-View-Controller
+- Key-value observing
+- NSObject
+- Alert
+- self
+- forEach
 

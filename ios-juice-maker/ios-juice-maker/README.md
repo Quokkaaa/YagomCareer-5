@@ -8,6 +8,81 @@ iOS 쥬스 메이커 재고관리 시작 저장소
 # UML
 ![Untitled](https://user-images.githubusercontent.com/74251593/157680342-4e904059-b021-498d-af48-7409c65df4cd.png)
 
+# [STEP3]
+
+# 핵심경험
+ - 내비게이션 바 및 바 버튼 아이템의 활용
+ - Stepper 활용
+ - Modality의 활용
+ - 화면 사이의 데이터 공유
+ - 오토레이아웃 시작하기
+
+# 고민했던점&어려웠던점
+- AutoLayout을 일부 코드로 구현하는것이 어려웠다.
+- Delegate vs NotificationCenter 중 어느것으로 데이터 전달을 할것인지
+일대 다의 데이터를 전달하는 Noti보단 재고에대한 한 인스턴스의 데이터만 전달을해도 충분하다고 판단하여 Delegate를 사용함.
+
+# 문제해결
+- 재고추가 완료 후 첫번째 뷰컨으로 돌아올때 fruitStore의 데이터 재고와 첫번째 label에서 출력되는 데이터 재고가 연동이 되어있지않았다.
+fruitStore내 재고를 업데이트해주는 메서드를 만들어 바로 적용해주었다.
+
+- Stepper -기능 해결
+초기에는 IBAction함수를 하나만들어서 함수를 각각 storyboard에 있는 stepper들을 연결해주었는데 value값을 +할떄는 상관없었지만 -할떄는 -가 되질 않았었다.
+그이유는 stepper의 value를 모두 1로 설정해놓았기때문이었고 그랬을때 -버튼을 누르면 1이 0이되어 더이상 -버튼이 눌릴 수 없었다. 그래서
+팀원 도니가 해결한 부분이 stepper의 인스턴스를 만들어서 value값에 재고를 값을 할당해주는 방법이 있었다. 그러면 초기 value가 재고만큼 값이 할당받았기때문에 -버튼을 그만큼 누를수 있게되고 버튼이 잘 동작하도록 설정이되었다.
+
+- Alert기능을 Buidler Pattern사용하여 가독성을 증가
+[Before]
+```swift
+func showFailureAlert() {
+        let failureAlert = UIAlertController(title: "재료가 모자람",
+                                             message: "재고수정으로 ㄱ?",
+                                             preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "네",
+                                     style: .default,
+                                     handler: nil)
+        let noAction = UIAlertAction(title: "아니오",
+                                     style: .cancel,
+                                     handler: nil)
+        failureAlert.addAction(okAction)
+        failureAlert.addAction(noAction)
+        present(failureAlert, animated: true, completion: nil)
+    }
+
+func showSuccesAlert() {
+        let successAlert = UIAlertController(title: "타이틀입니다.",
+                                            message: "메세지입니다.",
+                                            preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "okActioin입니다.",
+                                     style: .default,
+                                     handler: nil)
+        successAlert.addAction(okAction)
+        present(successAlert, animated: true, completion: nil)
+    }
+```
+
+[After]
+```swift
+    private func showSuccessAlert(of juice: Juice) {
+        AlertBuilder(viewController: self)
+            .withTitle(juice.name + AlertText.cameOut)
+            .andMessage(AlertText.enjoyDrink)
+            .preferredStyle(.alert)
+            .onSuccessAction(title: AlertText.check) { _ in }
+            .show()
+    }
+    
+    private func showFailureAlert() {
+        AlertBuilder(viewController: self)
+            .withTitle(AlertText.outOfStock)
+            .andMessage(AlertText.editStock)
+            .preferredStyle(.alert)
+            .onSuccessAction(title: AlertText.yes) { action in
+                self.moveEditFruitStockViewController(action)
+            }
+            .onCancelAction(title: AlertText.no) { _ in }
+            .show()
+    }
 
 
 # [STEP2 PR 후 수정완료]
@@ -61,7 +136,7 @@ iOS 쥬스 메이커 재고관리 시작 저장소
 
 **Example1)**
 [Before]
-```swift=
+```swift
     private func convertToJuice(_ sender: UIButton) -> Juice? {
         switch sender.tag {
             case 1:
@@ -85,7 +160,7 @@ iOS 쥬스 메이커 재고관리 시작 저장소
 ```
 
 [After]
-```swift=
+```swift
 private func convertToJuice(_ sender: UIButton) -> Juice? {
         switch Juice(rawValue: sender.tag) {
         case .strawberryBanana:
@@ -111,7 +186,7 @@ private func convertToJuice(_ sender: UIButton) -> Juice? {
 **Example2)**
 
 [Before]
-```swift=
+```swift
     @IBOutlet weak var strawberryStockLabel: UILabel!
     @IBOutlet weak var bananaStockLabel: UILabel!
     @IBOutlet weak var pineappleStockLabel: UILabel!
@@ -128,7 +203,7 @@ private func convertToJuice(_ sender: UIButton) -> Juice? {
 ```
 
 [After]
-```swift=
+```swift
     @IBOutlet private var fruitStockLabels: [UILabel]!
 
     private func updateFruitStockLabels() {
@@ -141,7 +216,7 @@ private func convertToJuice(_ sender: UIButton) -> Juice? {
 
 ## Extension UIViewController / identifier 연산프로퍼티
 > 이전에는 하나의 클래스에 일일이 아래와 같은 코드를 넣어주어 identifier를 가졌다면, UIViewController를 확장함으로써 UIViewController를 상속받는 모든 클래스에 자동적으로 identifier를 가질 수 있도록 하였습니다.  
-```swift=
+```swift
 extension UIViewController {
     static var identifier: String {
         return String(describing: self)
@@ -163,7 +238,7 @@ extension UIViewController {
 
 [Before]
 
-```Swift=
+```Swift
     @IBAction func orderStrawberryBananaButton(_ sender: Any) {
         makeJuice(.strawberryBanana) ? showSuccessAlert() : showFailureAlert()
         updateFruitStock()
@@ -201,7 +276,7 @@ extension UIViewController {
 ```
 
 [After]
-```Swift=
+```Swift
     @IBOutlet weak var sbJuiceButton: UIButton!
     @IBOutlet weak var sJuiceButton: UIButton!
     @IBOutlet weak var bJuiceButton: UIButton!
@@ -263,7 +338,7 @@ extension UIViewController {
 subtractFruitQuantity메서드 내 self.fruitStore.changeFruitQuantity코드가 중복되는데 코드 개선을 해볼수있을까요 ?
 
 [Before]
-```Swift=
+```Swift
     private func subtractFruitQuantity(for juice: Juice) {
         switch juice {
         case .strawberry:
@@ -286,7 +361,7 @@ subtractFruitQuantity메서드 내 self.fruitStore.changeFruitQuantity코드가 
     }
 ```
 [After]
-```Swift=
+```Swift
     private func subtractFruitQuantity(for juice: Juice) {
         juice.recipe.forEach { (fruit: Juice.Fruit, count: Int) in
             fruitStore.changeFruitQuantity(by: fruit, count: count)
